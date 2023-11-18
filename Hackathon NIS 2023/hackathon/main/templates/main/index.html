@@ -1,0 +1,506 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Important Page</title>
+        <link rel="stylesheet" type="text/css" href="{url "static/main/Main1.css"}" />
+        <link rel="SHORTCUT ICON" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <style>
+        body{
+            width: 1920px;
+            height: 4168px;
+        }
+        .login{
+            color: #000;
+            font-family: Outfit;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        
+            display: inline-flex;
+            padding: 3px 49px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 30px;
+            background: #73E8A2;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 50px;
+            left: 85%;
+            transform: translateX(-50%);
+        }
+        .style{
+            width: 292px;
+            height: 294px;
+            flex-shrink: 0;
+            border-radius: 589px;
+            background: rgba(121, 249, 249, 0.8);
+            filter: blur(170.75px);
+            position: absolute;
+            top: 100px;
+            left: 15%;
+            transform: translateX(-50%);
+        }
+        .text{
+            color: #000;
+            font-family: Outfit;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 532;
+            line-height: normal;
+            position: absolute;
+            top: 50px;
+            left: 15%;
+            transform: translateX(-50%);
+        }
+        .lorem{
+            width: 638px;
+            position: absolute;
+            top: 200px;
+            left: 15%;
+        }
+        .lorem1{
+            color: #000;
+            font-family: Outfit;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 8.4px;
+            text-transform: capitalize;
+        }
+        .lorem2{
+            color: #00C838;
+            font-family: Outfit;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: 8.4px;
+            text-transform: capitalize;
+        }
+        .box2{
+            color: #000;
+            font-family: Outfit;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 642;
+            line-height: normal;
+            letter-spacing: 2.76px;
+            text-transform: capitalize;
+        
+            display: inline-flex;
+            padding: 18px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 30px;
+            background: #B1F587;
+            box-shadow: 1px 4px 4.6px 0px rgba(0, 0, 0, 0.25);
+        
+            position: absolute;
+            top: 550px;
+            left: 15%;
+        }
+        .sy{
+            color: #000;
+            text-shadow: 1px 4px 7.800000190734863px rgba(0, 0, 0, 0.50);
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 535;
+            line-height: normal;
+            letter-spacing: 6.8px;
+            position: absolute;
+            top: 850px;
+            left: 20%;
+        }
+        .img{
+            width: 401.138px;
+            height: 401.138px;
+            transform: rotate(-2.865deg);
+            position: absolute;
+            top: 10px;
+            left: 60%;
+            transform: translateX(-50%);
+            flex-shrink: 0;
+        }
+        .img1{
+            width: 330px;
+            height: 330px;
+            position: absolute;
+            top: 400px;
+            left: 65%;
+            transform: translateX(-50%);
+            flex-shrink: 0;
+        }
+        .img2{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 150px;
+            left: 70%;
+            transform: translateX(-50%);
+            flex-shrink: 0;
+        }
+        .img3{
+            width: 193px;
+            height: 40px;
+            transform: rotate(-40.182deg);
+            flex-shrink: 0;
+            fill: var(--Balck, #0D1927);
+            position: absolute;
+            top: 900px;
+            left: 65%;
+            transform: translateX(-50%);
+        }
+        .text1{
+            width: 638px;
+            color: #000;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: Rubik;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 643;
+            line-height: normal;
+            letter-spacing: 3.6px;
+            text-transform: capitalize;
+            position: absolute;
+            top: 1300px;
+            left: 65%;
+            transform: translateX(-50%);
+        }
+        .text2{
+            width: 640px;
+            color: #000;
+            font-family: Outfit;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 457;
+            line-height: normal;
+            letter-spacing: 1.38px;
+            text-transform: lowercase;
+            position: absolute;
+            top: 1500px;
+            left: 65%;
+            transform: translateX(-50%);
+        }
+        .img4{
+            width: 250px;
+            height: 250px;
+            flex-shrink: 0;
+            position: absolute;
+            top: 1200px;
+            left: 15%;
+            transform: translateX(-50%);
+        }
+        .img5{
+            width: 250px;
+            height: 250px;
+            flex-shrink: 0;
+            position: absolute;
+            top: 1350px;
+            left:27%;
+            transform: translateX(-50%);
+        }
+        .text3{
+            width: 638px;
+            color: #000;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: Rubik;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 643;
+            line-height: normal;
+            letter-spacing: 3.6px;
+            text-transform: capitalize;
+            position: absolute;
+            top: 1900px;
+            left:27%;
+            transform: translateX(-50%);
+        }
+        .text4{
+            width: 640px;
+            color: #000;
+            font-family: Outfit;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 457;
+            line-height: normal;
+            letter-spacing: 1.32px;
+            text-transform: lowercase;
+            position: absolute;
+            top: 2100px;
+            left:28%;
+            transform: translateX(-50%);
+        }
+        .img6{
+            width: 250px;
+            height: 250px;
+            flex-shrink: 0;
+            position: absolute;
+            top: 1800px;
+            left:75%;
+            transform: translateX(-50%);
+        }
+        .img7{
+            width: 250px;
+            height: 250px;
+            flex-shrink: 0;
+            position: absolute;
+            top: 2000px;
+            left:60%;
+            transform: translateX(-50%);
+        }
+        .img8{
+            width: 250px;
+            height: 250px;
+            transform: rotate(-9.733deg);
+            flex-shrink: 0;
+            position: absolute;
+            top: 2500px;
+            left:18%;
+            transform: translateX(-50%);
+        
+        }
+        .img9{
+            width: 250px;
+            height: 250px;
+            flex-shrink: 0;
+            position: absolute;
+            top: 2700px;
+            left:30%;
+            transform: translateX(-50%);
+        }
+        .text5{
+            width: 638px;
+            color: #000;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: Rubik;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 643;
+            line-height: normal;
+            letter-spacing: 3.6px;
+            text-transform: capitalize;
+            position: absolute;
+            top: 2600px;
+            left:73%;
+            transform: translateX(-50%);
+        }
+        .text6{
+            width: 742px;
+            color: #000;
+            font-family: Outfit;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 457;
+            line-height: normal;
+            letter-spacing: 1.32px;
+            text-transform: lowercase;
+            position: absolute;
+            top: 2800px;
+            left:75%;
+            transform: translateX(-50%);
+        }
+        .text7{
+            width: 638px;
+            color: #000;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: Rubik;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 643;
+            line-height: normal;
+            letter-spacing: 3.6px;
+            text-transform: capitalize;
+            position: absolute;
+            top: 3400px;
+            left:25%;
+            transform: translateX(-50%);
+        }
+        .text8{
+            width: 742px;
+            color: #000;
+            font-family: Outfit;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 457;
+            line-height: normal;
+            letter-spacing: 1.32px;
+            text-transform: lowercase; 
+            position: absolute;
+            top: 3600px;
+            left:27%;
+            transform: translateX(-50%);
+        }
+        .img10{
+            width: 250px;
+            height: 250px;
+            flex-shrink: 0;
+            position: absolute;
+            top: 3200px;
+            left:75%;
+            transform: translateX(-50%);
+        }
+        .img11{
+            width: 250px;
+            height: 250px;
+            flex-shrink: 0;
+            position: absolute;
+            top: 3500px;
+            left:63%;
+            transform: translateX(-50%);
+        }
+        
+        .bg{
+            width: 2500px;
+            height: 143px;
+            flex-shrink: 0;
+            background: rgba(2, 2, 2, 0.83);
+            position: absolute;
+            top: 4080px;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        .txt{
+            color: rgba(255, 255, 255, 0.80);
+            font-family: Outfit;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 532;
+            line-height: normal;
+            position: absolute;
+            top: 4125px;
+            left:80%;
+            transform: translateX(-50%);
+        }
+        .footer{
+            width: 866px;
+            height: 48px;
+            flex-shrink: 0;
+            color: #ffffffcc;
+            font-family: Outfit;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: normal;
+            letter-spacing: 0.9px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 4130px;
+            left: 5%;
+        }
+        a{
+            color: black;
+            text-decoration: dashed;
+        }
+    </style>
+    <div class="login">
+        <a href="{% url 'login' %}">
+            Login
+        </a>
+    </div>
+    <div class="style"></div>
+    <div class="text">
+        PortfolioTracker
+    </div>
+    <div class="lorem">
+        <div class="lorem1">
+            Effectively Track Your Educational 
+        </div>
+        <div class="lorem2">
+            Journey
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="{% static "main/images/target-dynamic-color.png" %}" alt="trget">
+    </div>
+    <div class="img1">
+        <img src="{% static "main/images/file-text-dynamic-color.png" %}" alt="taret">
+    </div>
+    <div class="img2">
+        <img src="{% static "main/images/trophy-dynamic-color.png" %}" alt="trget">
+    </div>
+    <div class="img3">
+        <img src="{% static "main/images/Arrow-18.png" %}" alt="target">
+    </div>
+    <div class="text1">
+        Track individual progress
+    </div>
+    <div class="text2">
+        The system offers a graphical representation of a student's achievements over the years, allowing them to visually see their educational growth.
+    </div>
+    
+    <div class="box2">
+        <a href="{% url 'register' %}">
+            Start your journey
+        </a>
+    </div>
+    <div class="sy">
+        The system enables users to
+    </div>
+    <div class="img4">
+        <img src="{% static "main/images/pin-dynamic-color.png" %}" alt="targt">
+    </div>
+    <div class="img5">
+        <img src="{% static "main/images/chart-dynamic-color.png" %}" alt="targe">
+    </div>
+    <div class="text3">
+        Add and manage achievements
+    </div>
+    <div class="text4">
+        Users can add their work, certificates, diplomas, and photographic evidence of their successes.
+    </div>
+    <div class="img6">
+        <img src="{% static "main/images/folder-dynamic-color.png" %}" alt="arget">
+    </div>
+    <div class="img7">
+        <img src="{% static "main/images/setting-dynamic-color.png" %}" alt="target">
+    </div>
+    <div class="img8">
+        <img src="{% static "main/images/tick-dynamic-color.png" %}" alt="target">
+    </div>
+    <div class="img9">
+        <img src="{% static "main/images/chat-text-dynamic-color.png" %}" alt="target">
+    </div>
+    <div class="img10">
+        <img src="{% static "main/images/explorer-dynamic-colorx.png" %}" alt="target">
+    </div>
+    <div class="img11">
+        <img src="{% static "main/images/calender-dynamic-color.png" %}" alt="target">
+    </div>
+    <div class="text5">
+        Plan individual development
+    </div>
+    <div class="text6">
+        The system provides recommendations and tools for creating a development plan, as well as allowing students to monitor the completion of their goals and tasks.
+    </div>
+    <div class="text7">
+        Monitor results over the years
+    </div>
+    <div class="text8">
+        Students can analyze their educational achievements over different periods and compare their progress.
+    </div>
+    
+    <div class="bg"></div>
+    <div class="footer">
+        Made by Mars Yernar,  Zharas Miras, Adel Abzhan, Ansar Abishev
+    </div>
+    <div class="txt">
+        PortfolioTracker
+    </div>
+</body>
+</html>

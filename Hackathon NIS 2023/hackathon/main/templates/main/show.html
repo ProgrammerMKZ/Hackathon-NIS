@@ -1,0 +1,31 @@
+<!-- main/show.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Files</title>
+</head>
+<body>
+
+<h2>File List</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>File</th>
+            <th>Images</th>
+            <th>Date Uploaded</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for file in object_list %}
+            <tr>
+                <td><a href="{{ file.file.url }}">{{ file.file.name }}</a></td>
+                <td><img src="{{ file.images.url }}" alt="Image"></td>
+                <td>{{ file.created_at }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
