@@ -8,7 +8,292 @@
     <link rel="SHORTCUT ICON" href="favicon.jpeg" type="image/x-icon">
 </head>
 <body>
-    
+    <style>
+        body{
+            width: 1700px;
+            height: 1080px;
+        }
+        .text{
+            color: #000;
+            font-family: Outfit;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: normal;
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            transform: translateX(-50%);
+        }
+        .gradient{
+            position: absolute;
+            top: 170px;
+            left: 30%;
+            transform: translateX(-50%);
+        }
+        .upperbox{
+            width: 2600px;
+            height: 100px;
+            flex-shrink: 0;
+            background: #FFF;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box1{
+            width: 1056px;
+            height: 580px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            background: #FFF;
+            box-shadow: 2px 2px 37.5px 0px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 300px;
+            left: 30%;
+            transform: translateX(-50%);
+        }
+        .circle{
+            width: 131px;
+            height: 131px;
+            flex-shrink: 0;
+            position: absolute;
+            top: 250px;
+            left: 15%;
+            transform: translateX(-50%);
+        }
+        .text2{
+            position: absolute;
+            top: 420px;
+            left: 16%;
+            transform: translateX(-50%);
+            color: #000;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: normal;
+            letter-spacing: 6.75px;
+        }
+        .text3{
+            color: #000;
+            font-family: Outfit;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            position: absolute;
+            top: 475px;
+            left: 15%;
+            transform: translateX(-50%);
+        }
+        .actbox{
+            color: #000;
+            font-family: Inter;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 331;
+            line-height: normal;
+            letter-spacing: 2.89px;
+            text-transform: capitalize;
+        
+            width: 221px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 15px;
+            background: #A6FF98;
+            box-shadow: 0px 4px 5.9px 0px rgba(0, 0, 0, 0.25);
+        
+            position: absolute;
+            top: 750px;
+            left: 15%;
+            transform: translateX(-50%);
+            text-align: center;
+            line-height: 50px;
+        }
+        .text4{
+            width: 322px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 15px;
+            background: #FFC998;
+            box-shadow: 0px 4px 5.9px 0px rgba(0, 0, 0, 0.25);
+            text-decoration: dashed;
+        
+            text-align: center;
+            width: 295.256px;
+            color: #000;
+            font-family: Inter;
+            font-size: 17px;
+            font-style: italic;
+            font-weight: 454;
+            line-height: normal;
+            letter-spacing: 2.89px;
+            text-transform: capitalize;
+        
+            position: absolute;
+            top: 750px;
+            left: 30%;
+            transform: translateX(-50%);
+            line-height: 50px;
+        }
+        .bigbox{
+            width: 438px;
+            height: 700px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            background: linear-gradient(180deg, #FF8D63 0%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: 2px 2px 37.5px 0px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 170px;
+            left: 80%;
+            transform: translateX(-50%);
+        }
+        .date{
+            color: #000;
+            font-family: Outfit;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 8.05px;
+            text-transform: capitalize;
+            position: absolute;
+            top: 210px;
+            left: 80%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        .date1{
+            color: #000;
+            font-family: Inter;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 8.4px;
+            text-transform: capitalize;
+            position: absolute;
+            top: 270px;
+            left: 80%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        .text5{
+            color: #8785FF;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            font-family: Outfit;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 1000;
+            line-height: normal;
+            letter-spacing: 5.95px;
+            text-transform: capitalize;
+        
+            position: absolute;
+            top: 375px;
+            left: 75%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        .text6{
+            color: #000;
+            font-family: Outfit;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 347;
+            line-height: normal;
+            letter-spacing: 2.5px;
+            text-transform: capitalize;
+        
+            width: 351px;
+            height: 71px;
+            flex-shrink: 0;
+            border-radius: 19px;
+            background: #FBFBFB;
+            box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+        
+            position: absolute;
+            top: 450px;
+            left: 80%;
+            transform: translateX(-50%);
+            text-align: center;
+            line-height:70px ;
+        }
+        .text7{
+            color: #000;
+            font-family: Outfit;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 347;
+            line-height: normal;
+            letter-spacing: 2.5px;
+            text-transform: capitalize;
+        
+            width: 351px;
+            height: 71px;
+            flex-shrink: 0;
+            border-radius: 19px;
+            background: #FBFBFB;
+            box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+        
+            position: absolute;
+            top: 550px;
+            left: 80%;
+            transform: translateX(-50%);
+            text-align: center;
+            line-height:70px ;
+        }
+        .text8{
+            color: #000;
+            font-family: Outfit;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 347;
+            line-height: normal;
+            letter-spacing: 2.5px;
+            text-transform: capitalize;
+        
+            width: 351px;
+            height: 71px;
+            flex-shrink: 0;
+            border-radius: 19px;
+            background: #FBFBFB;
+            box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+        
+            position: absolute;
+            top: 650px;
+            left: 80%;
+            transform: translateX(-50%);
+            text-align: center;
+            line-height:70px ;
+        }
+        .text9{
+            color: rgba(0, 0, 0, 0.50);
+            font-family: Outfit;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 347;
+            line-height: normal;
+            letter-spacing: 2.5px;
+            text-transform: capitalize;
+        
+            width: 351px;
+            height: 71px;
+            flex-shrink: 0;
+            border-radius: 19px;
+            background: #FBFBFB;
+            box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.25);
+        
+            position: absolute;
+            top: 750px;
+            left: 80%;
+            transform: translateX(-50%);
+            text-align: center;
+            line-height:70px ;
+        }
+    </style>
     <div class="upperbox"></div>
     <div class="box1"></div>
     <div class="text">

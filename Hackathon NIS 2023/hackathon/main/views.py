@@ -38,7 +38,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return render(request, 'main/req.html')
+            return render(request, 'main/Main.html')
         else:
             return render(request, 'main/registration.html', {'register_form': form})
     form = NewUserForm()
