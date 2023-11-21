@@ -24,7 +24,7 @@ def Login(request):
 			if user is not None:
 				login(request, user)
 				messages.info(request, f"You are now logged in as {username}.")
-				return render(request, 'main/profile.html')
+				return render(request, 'main/Profile.html')
 			else:
 				messages.error(request,"Invalid username or password.")
 		else:
@@ -57,6 +57,9 @@ def upload_file(request):
 def file_show(request):
 	object_list = Files.objects.all()
 	return render(request, 'main/show.html', {'object_list': object_list})
+
+def profile(request):
+	return render(request, 'main/Profile.html')
 
 # def thanks_page(request):
 # 	name = request.GET['name']
